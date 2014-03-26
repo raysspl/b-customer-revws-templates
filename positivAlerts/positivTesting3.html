@@ -21,6 +21,7 @@ body{
   -ms-text-size-adjust:100%; 
   margin:0; 
   padding:0;
+  background: #FaFaFa;
 }
 
 .ExternalClass { 
@@ -158,9 +159,11 @@ table.eight { width: 380px; }
 table.nine { width: 430px; }
 table.ten { width: 480px; }
 table.eleven { width: 530px; }
-table.twelve { width: 580px; }
+table.twelve { width: 100%; }
 
-table.one center { min-width: 30px; }
+/*h6.customer { width: 100%; }*/
+
+/*table.one center { min-width: 30px; }
 table.two center { min-width: 80px; }
 table.three center { min-width: 130px; }
 table.four center { min-width: 180px; }
@@ -184,7 +187,7 @@ table.eight .panel center { min-width: 360px; }
 table.nine .panel center { min-width: 410px; }
 table.ten .panel center { min-width: 460px; }
 table.eleven .panel center { min-width: 510px; }
-table.twelve .panel center { min-width: 560px; }
+table.twelve .panel center { min-width: 560px; }*/
 
 .body .columns td.one,
 .body .column td.one { width: 8.333333%; }
@@ -345,8 +348,9 @@ h6 {font-size: 20px;}
 body, table.body, p, td {font-size: 14px;line-height:19px;}
 
 p.lead, p.lede, p.leed {
-  font-size: 18px;
+  font-size: 16px;
   line-height:21px;
+  margin: 30px 0px 0px 0px;
 }
 
 p { 
@@ -424,7 +428,7 @@ table.tiny-button,
 table.small-button,
 table.medium-button,
 table.large-button {
-  width: 100%;
+  width: 225px;
   overflow: hidden;
 }
 
@@ -434,12 +438,13 @@ table.small-button td,
 table.medium-button td,
 table.large-button td {
   display: block;
-  width: auto !important;
+  width: 225px !important;
   text-align: center;
-  background: #2ba6cb;
+  background: #3b5998;
   border: 1px solid #2284a1;
   color: #ffffff;
   padding: 8px 0;
+  border-radius: 4px;
 }
 
 table.tiny-button td {
@@ -467,7 +472,7 @@ table.large-button td a {
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 table.tiny-button td a {
@@ -574,6 +579,25 @@ table.round td {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
   border-radius: 500px;
+}
+
+.customer {
+  margin: 5px 10px 0px 0px;
+  /*padding: 0px 15px 10px 0px;*/
+}
+
+span.ratinggreen {
+  color: green;
+  font-weight: bold;
+}
+
+span.rating2 {
+  color: black;
+  font-weight: normal;
+}
+
+tr.h6heading {
+  margin: 0px 0px 10px 0px;
 }
 
 /* Outlook First */
@@ -737,6 +761,7 @@ body.outlook p {
     .header {
       background: white;
       border-top: 10px solid #65b5bc;
+      border-bottom: 1px solid #d8d8d8;
     }
 
     .footer .wrapper {
@@ -745,6 +770,20 @@ body.outlook p {
 
     .footer h5 {
       padding-bottom: 10px;
+    }
+
+    table.footer-wrap { 
+      width: 100%;  
+      clear:both!important;
+      border-top: 5px solid #65b5bc;
+      background: white;
+    }
+    .footer-wrap .container td.content p { 
+      border-top: 1px solid rgb(215,215,215); 
+      padding-top:15px;
+      font-size:10px;
+      font-weight: bold;
+      padding: 0 10px;
     }
 
     table.columns .text-pad {
@@ -812,6 +851,7 @@ body.outlook p {
             </tr>
           </table>
           <br>
+          
 
           <table class="container">
             <tr>
@@ -826,28 +866,18 @@ body.outlook p {
                         <tr>
                           <td>
 
-                            <h1>Hi, Elijah Baily</h1>
-                						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                						<img width="580" height="300" src="http://placehold.it/580x300">
+                            <!-- <h5><b>Google: </b><span class="ratinggreen">4 </span><span class="rating2">of 5 stars</span> </span></h5>
+                						<p class="lead">Asana Bridg</p> -->
+                						
+                            <!-- <span> -->
+                              
 
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
+                              <tr class="h6heading"><h6 class="customer"><b>Google: </b><span class="ratinggreen">4 </span><span class="rating2">of 5 stars</span></h6></tr>
+                              <img src="http://s3-media4.ak.yelpcdn.com/photo/7PGDeCruMz-pHAujAuz7eQ/60s.jpg" class="customer">
+                              <p class="lead">Asana Bridg</p>
 
-                    </td>
-                  </tr>
-                </table>
 
-                <table class="row callout">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td class="panel">
-
-                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
+                            <!-- </span> -->
 
                           </td>
                           <td class="expander"></td>
@@ -866,7 +896,7 @@ body.outlook p {
                         <tr>
                           <td>
 
-                            <h3>Title Ipsum <small>This is a note.</small></h3>
+                            <!-- <h3>Title Ipsum <small>This is a note.</small></h3> -->
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                           </td>
@@ -878,7 +908,7 @@ body.outlook p {
                   </tr>
                 </table>
 
-
+                <!-- begin button -->
                 <table class="row">
                   <tr>
                     <td class="wrapper last">
@@ -890,7 +920,7 @@ body.outlook p {
                             <table class="button">
                               <tr>
                                 <td>
-                                  <a href="#">Click Me!</a>
+                                  <a href="#">Share on Facebook!</a>
                                 </td>
                               </tr>
                             </table>
@@ -903,60 +933,32 @@ body.outlook p {
                     </td>
                   </tr>
                 </table>
+                <!-- end button -->
+                <hr>
 
-
-                <table class="row footer">
+                <table class="row">
                   <tr>
-                    <td class="wrapper">
-
-                      <table class="six columns">
-                        <tr>
-                          <td class="left-text-pad">
-
-                            <h5>Connect With Us:</h5>
-
-                            <table class="tiny-button facebook">
-                              <tr>
-                                <td>
-                                  <a href="#">Facebook</a>
-                                </td>
-                              </tr>
-                            </table>
-
-                            <br>
-
-                            <table class="tiny-button twitter">
-                              <tr>
-                                <td>
-                                  <a href="#">Twitter</a>
-                                </td>
-                              </tr>
-                            </table>
-
-                            <br>
-
-                            <table class="tiny-button google-plus">
-                              <tr>
-                                <td>
-                                  <a href="#">Google +</a>
-                                </td>
-                              </tr>
-                            </table>
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
                     <td class="wrapper last">
 
-                      <table class="six columns">
+                      <table class="twelve columns">
                         <tr>
-                          <td class="last right-text-pad">
-                            <h5>Contact Info:</h5>
-                            <p>Phone: 408.341.0600</p>
-                            <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
+                          <td>
+
+                            <!-- <h5><b>Google: </b><span class="ratinggreen">4 </span><span class="rating2">of 5 stars</span> </span></h5>
+                            <p class="lead">Asana Bridg</p> -->
+                            
+                            <!-- <span> -->
+                              
+                              <!-- <h6 class="customer"><b>Google: </b><span class="ratinggreen">4 </span><span class="rating2">of 5 stars</span></h6>
+                              <p class="lead">Amit Jain</p>
+                              <img src="http://s3-media2.ak.yelpcdn.com/photo/wSsK7VqTPVw2fTql_ksWsA/60s.jpg" class="customer"> -->
+
+                              <tr class="h6heading"><h6 class="customer"><b>Google: </b><span class="ratinggreen">4 </span><span class="rating2">of 5 stars</span></h6></tr>
+                              <img src="http://s3-media4.ak.yelpcdn.com/photo/7PGDeCruMz-pHAujAuz7eQ/60s.jpg" class="customer">
+                              <p class="lead">Asana Bridg</p>
+
+                            <!-- </span> -->
+
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -965,6 +967,54 @@ body.outlook p {
                     </td>
                   </tr>
                 </table>
+
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="twelve columns">
+                        <tr>
+                          <td>
+
+                            <!-- <h3>Title Ipsum <small>This is a note.</small></h3> -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- begin button -->
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="three columns">
+                        <tr>
+                          <td>
+
+                            <table class="button">
+                              <tr>
+                                <td>
+                                  <a href="#">Share on Facebook!</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+                <!-- end button -->
+                <hr>
 
 
                 <table class="row">
@@ -973,10 +1023,23 @@ body.outlook p {
 
                       <table class="twelve columns">
                         <tr>
-                          <td align="center">
-                            <center>
-                              <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
-                            </center>
+                          <td>
+
+                            <!-- <h5><b>Google: </b><span class="ratinggreen">4 </span><span class="rating2">of 5 stars</span> </span></h5>
+                            <p class="lead">Asana Bridg</p> -->
+                            
+                            <!-- <span> -->
+                              
+                              <!-- <h6 class="customer"><b>Google: </b><span class="ratinggreen">4 </span><span class="rating2">of 5 stars</span></h6>
+                              <p class="lead">Asana Bridg</p>
+                              <img src="http://s3-media4.ak.yelpcdn.com/photo/7PGDeCruMz-pHAujAuz7eQ/60s.jpg" class=""><td class="expander"></td> -->
+
+                              <tr class="h6heading"><h6 class="customer"><b>Google: </b><span class="ratinggreen">4 </span><span class="rating2">of 5 stars</span></h6></tr>
+                              <img src="http://s3-media4.ak.yelpcdn.com/photo/7PGDeCruMz-pHAujAuz7eQ/60s.jpg" class="customer">
+                              <p class="lead">Asana Bridg</p>
+
+                            <!-- </span> -->
+
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -986,7 +1049,81 @@ body.outlook p {
                   </tr>
                 </table>
 
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="twelve columns">
+                        <tr>
+                          <td>
+
+                            <!-- <h3>Title Ipsum <small>This is a note.</small></h3> -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- begin button -->
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="three columns">
+                        <tr>
+                          <td>
+
+                            <table class="button">
+                              <tr>
+                                <td>
+                                  <a href="#">Share on Facebook!</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+                <!-- end button -->
+                <br>
+                <!-- <hr> -->
+
+                
+
                 <!-- container end below -->
+              </td>
+            </tr>
+          </table>
+
+
+          <table class="footer-wrap"> 
+            <tr>
+              <td class="wrapper last">
+
+                <table class="twelve columns">
+                  <tr>
+                    <td align="center">
+                      <center>
+                        <p style="text-align:center;"><b>Hungry Howie's Pizza</b></p>
+                        <p style="text-align:center;">11390 West Olympic Blvd., Los Angeles, CA 90034</p>
+                        <p style="text-align:center;">1-800-432-5765</p>
+                        <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
+                      </center>
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+
               </td>
             </tr>
           </table>
